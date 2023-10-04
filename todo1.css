@@ -1,0 +1,97 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and set font properties for the entire page */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Style the header */
+h1 {
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Style the to-do list container */
+.todo-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Style the task list */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style individual tasks */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Style the task text */
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+/* Style the delete button */
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+/* Style the input field and submit button */
+.task-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style hover and active states for buttons */
+.delete-button:hover,
+.submit-button:hover,
+.submit-button:active {
+  background-color: #c0392b;
+}
+
+/* Responsive styles */
+/* @media screen and (max-width: 480px) {
+  .todo-container {
+    max-width: 100%;
+  }
+} */
