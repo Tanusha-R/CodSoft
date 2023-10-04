@@ -1,88 +1,97 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and set font properties for the entire page */
 body {
-  display: block;
-  justify-content: space-evenly;
-  margin: 5px;
-  color: white;
+  background-color: #f0f0f0;
   font-family: Arial, sans-serif;
-  background-color: rgb(0, 0, 0);
-}
-
-#sec-1 {
-  width: 85%;
-}
-
-#sec-2 {
-  width: 75%;
-}
-
-h3,h2 {
-  color: rgb(50, 197, 207);
-}
-
-p {
-  margin: 3px;
-}
-
-.skills li {
-  display: inline-block;
-  border: solid 1px white;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.h {
   text-align: center;
 }
 
-nav ul {
+/* Style the header */
+h1 {
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Style the to-do list container */
+.todo-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Style the task list */
+.task-list {
   list-style-type: none;
   padding: 0;
-  text-align: center;
-  background-color: #000000;
 }
 
-section {
-  margin: 20px;
+/* Style individual tasks */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-form {
-  margin-top: 10px;
+/* Style the task text */
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
-footer {
-  text-align: center;
+/* Style the delete button */
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
-img {
-  width: 200px;
-  height: 150px;
-  border-radius: 100%;
+/* Style the input field and submit button */
+.task-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-li a {
+.submit-button {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-li a:hover {
-  background-color: #d7d000;
+/* Style hover and active states for buttons */
+.delete-button:hover,
+.submit-button:hover,
+.submit-button:active {
+  background-color: #c0392b;
 }
 
-nav ul li {
-  float: left;
-  border-right:1px solid #ffffff;
-  background-color: #424040;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #2cdce6;
-  color: black;
-}
+/* Responsive styles */
+/* @media screen and (max-width: 480px) {
+  .todo-container {
+    max-width: 100%;
+  }
+} */
